@@ -22,7 +22,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let linha of dadosFiltrados">
+      <tr *ngFor="let linha of dadosFiltrados" (click)="onRowClick($event)">
         <td *ngFor="let valor of linha">{{ valor }}</td>
       </tr>
     </tbody>

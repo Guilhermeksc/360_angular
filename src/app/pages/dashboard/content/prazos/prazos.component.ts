@@ -79,4 +79,16 @@ export class PrazosComponent {
       Object.values(dado).some((valor) => valor?.toString().toLowerCase().includes(filtro.toLowerCase()))
     );
   }
+  onRowClick(event: Event) {
+    const rows = document.querySelectorAll('tbody tr');
+    rows.forEach(row => row.classList.remove('selected')); // Remove a classe de todas as linhas
+  
+    const clickedRow = event.target as HTMLElement;
+    if (clickedRow) {
+      let row = clickedRow.closest('tr');
+      if (row) {
+        row.classList.add('selected'); // Adiciona a classe na linha clicada
+      }
+    }
+  }
 }

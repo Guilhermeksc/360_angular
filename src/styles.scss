@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+/* Fundo padrão para a aplicação */
+body {
+    background-color: #000000; /* Define o fundo preto */
+    color: #ffffff; /* Garante que o texto padrão seja branco */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Estilo de fonte padrão */
+  }
+  
+  /* Ajuste adicional para elementos comuns */
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; /* Títulos em branco */
+  }
+  
+  p, span, div {
+    color: #ffffff; /* Texto em branco */
+  }
+  
+  .dashboard-content {
+    padding: 10px; /* Espaçamento interno nas bordas */
+    margin: 10px; /* Espaçamento externo ao redor da div */
+    background-color: #1e1e1e; /* Fundo escuro para o tema */
+    border: 1px solid #444; /* Borda para destacar a seção */
+    border-radius: 8px; /* Bordas arredondadas para um visual mais suave */
+    color: #ffffff; /* Texto branco para contraste */
+  }
+  
+  .dashboard-content h1,
+  .dashboard-content h2 {
+    margin-bottom: 20px; /* Espaçamento entre os títulos e os elementos abaixo */
+    color: #ffffff; /* Garantir contraste no tema escuro */
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #121212; /* Fundo escuro para a tabela */
+    color: #ffffff; /* Cor do texto padrão */
+  }
+  
+  th, td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  .expansivel {
+    white-space: normal;
+    width: auto; /* Permite expandir */
+    max-width: 300px; /* Define um limite de expansão */
+    word-wrap: break-word; /* Quebra o texto se for muito longo */
+  }
+  
+  tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody tr:hover {
+    background-color: #444; /* Fundo mais claro no hover */
+    cursor: pointer;
+  }
+  
+  tbody tr.selected {
+    background-color: #444; /* Fundo escuro para linha selecionada */
+    color: #ffffff; /* Cor do texto permanece branca */
+  }
+  

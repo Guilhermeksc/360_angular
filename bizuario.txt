@@ -1,0 +1,5 @@
+npm uninstall inflight
+
+npm list -g rimraf glob
+
+npm install -g rimraf@latest glob@latest
